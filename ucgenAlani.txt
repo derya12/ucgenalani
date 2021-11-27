@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class alan {
+    public static void main(String[] args) {
+        double a, b,c,u;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Bir değer giriniz:");
+        a = inp.nextInt();
+        System.out.print("Bir değer giriniz:");
+        b = inp.nextInt();
+        System.out.print("Bir değer giriniz:");
+        c = inp.nextInt();
+        double cevre=(a+b+c);
+        u=cevre/2;
+        double alaninkaresi = u * (u-a)* (u-b) * (u-c);
+        System.out.println("Üçgenin Çevresi:"+(cevre));
+        System.out.println("Üçgenin Alanı:"+Math.sqrt(alaninkaresi));
+    }
+}
